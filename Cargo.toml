@@ -1,0 +1,21 @@
+[package]
+name = "base-n"
+version = "0.1.0"
+edition = "2024"
+description = "A Base32 library supporting multiple alphabats."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Leawind/base-n"
+keywords = ["base32", "base64", "encode", "decode", "no_std"]
+categories = ["encoding", "no-std"]
+
+[dependencies]
+
+[dev-dependencies]
+indicatif = "0.17.10"
+rand = "0.9.0"
+criterion = "0.5"
+
+[[bench]]
+name = "base32_benchmark"
+harness = false
